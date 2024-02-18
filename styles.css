@@ -1,0 +1,68 @@
+/* CSS for animating background color of the body */
+body {
+    animation: changeBackgroundColor 10s linear infinite; /* Animates background color change */
+}
+
+/* Keyframes defining the color change animation */
+@keyframes changeBackgroundColor {
+    0% { background-color: red; } /* Start color */
+    20% { background-color: blue; } /* Intermediate color */
+    40% { background-color: green; } /* Intermediate color */
+    60% { background-color: yellow; } /* Intermediate color */
+    80% { background-color: purple; } /* Intermediate color */
+    100% { background-color: red; } /* End color */
+}
+
+/* Styles for the main container */
+.container {
+    max-width: 600px; /* Sets maximum width of the container */
+    margin: 50px auto; /* Centers the container horizontally */
+    padding: 20px; /* Adds padding inside the container */
+    background-color: #fff; /* Sets background color of the container */
+    border-radius: 10px; /* Rounds the corners of the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect to the container */
+}
+
+/* Styles for the heading */
+h1 {
+    color: #333; /* Sets text color of the heading */
+}
+
+/* Styles for the button */
+button {
+    padding: 10px 20px; /* Adds padding inside the button */
+    font-size: 18px; /* Sets font size of the button text */
+    background-color: #cb00e6; /* Sets background color of the button */
+    color: #fff; /* Sets text color of the button */
+    border: none; /* Removes border from the button */
+    border-radius: 5px; /* Rounds the corners of the button */
+    cursor: pointer; /* Sets cursor style to pointer */
+}
+
+/* Styles for the button on hover */
+button:hover {
+    background-color: #cb00e6; /* Changes background color of the button on hover */
+}
+
+/* Styles for the generated excuse */
+#excuse {
+    margin-top: 20px; /* Adds margin at the top of the generated excuse */
+    font-size: 24px; /* Sets font size of the generated excuse */
+    color: #333; /* Sets text color of the generated excuse */
+    font-style: italic; /* Applies italic style to the generated excuse */
+}
+
+/* Additional styles for the main container */
+.container {
+    text-align: center; /* Aligns content inside the container to the center */
+    margin-top: 50px; /* Adds margin at the top of the container */
+}
+
+/* Styles for the container of the generated excuse */
+.excuse-container {
+    position: relative; /* Sets position of the container to relative */
+    width: 100%; /* Sets width of the container to 100% */
+    height: 50%; /* Sets height of the container to 50% */
+    overflow: hidden; /* Hides overflow content of the container */
+    animation: changeColor 10s linear infinite; /* Applies color change animation */
+}
